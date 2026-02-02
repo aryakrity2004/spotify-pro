@@ -105,26 +105,7 @@ cursor: pointer;
     display: flex;
 }
 
-.header-right{
-    border: 1px solid red;
-    display: flex;
-   align-items: center;
-   justify-content: center;
-}
-.header-right form button{
-    text-transform: capitalize;
-    color: #ccc;
-     background-color: #242424;
-     font-size: 16px;
-     padding: 0px 5px;
-}
-.header-right form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
 
-}
 .input-icon{
         border-inline-start: 1px solid var (--essential-subdued);
             padding-inline: 12px 4px;
@@ -464,6 +445,39 @@ font-size: 14px;
     transform:  scale(1.05);
 }
 
+.header-right{
+    /* border: 1px solid red; */
+    display: flex;
+   align-items: center;
+   justify-content: flex-end;
+  gap: 10px;                 /* Space between buttons */
+    padding: 10px 20px; 
+    
+}
+.header-right  button{
+    text-transform: capitalize;
+     color: #fff;
+     background-color: #242424;
+     font-size: 16px;
+     padding: 6px 14px;
+      border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+      background-color: transparent;
+}
+.header-right button:hover {
+    background-color: #fff;
+    color: #121212;
+    transform: scale(1.05);
+}
+.header-right button.login {
+    background-color: #fff;   /* White background */
+    color: #121212;           /* Dark text */
+}
+.header-right button.login:hover {
+    background-color: #f0f0f1; /* Slight gray on hover */
+    transform: scale(1.05);
+}
 
 
 
