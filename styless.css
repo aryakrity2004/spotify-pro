@@ -1,0 +1,478 @@
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+font-family: sans-serif;
+list-style: none;
+text-decoration: none;
+border: none;
+overflow: hidden;
+
+}
+body{
+    background-color: black;
+    width: 100%;
+    
+}
+header{
+    background-color: black;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    
+}
+.header-left{
+    gap: 25px;
+    display: flex;
+    align-items: center;
+}
+.header-left>figure{
+    padding: 5px;
+}
+.header-left>figure>svg{
+fill: #fff;
+cursor: pointer;
+/* background-color: none; */
+}
+.home-icon{
+    width: 55px;
+    height: 50px;
+border-radius: 50%;
+background-color: #242424;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+ transition: all 0.3s ease;
+}
+.home-icon:hover{
+ transform: scale(1.05);
+ 
+}
+.home-icon>svg:nth-child(1){
+    width: 25px;
+    fill: white;
+}
+.search-box i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding-top: 18px;
+    padding-left: 15px;
+   
+}
+.search-box input::placeholder{
+    color: #ccc;
+    font-size: 18px;
+    padding: 20px;
+}
+.header-left form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.search-box>svg:nth-child(1){
+    position: absolute;
+    fill: #fff;
+    width: 25px;
+    top: 10px;
+    left: 10px;
+    
+}
+.search-box input{
+    width: 500px;
+    height: 50px;
+    border-radius: 25px;
+    /* border: 1px solid #fff; */
+    padding-left: 40px;
+    background-color: #242424;
+   display: flex;
+   color: white;
+   font-size: 18px;
+}
+.search-box{
+    /* border: 2px solid white; */
+    border-radius: 25px;
+    /* border: 1px solid #ccc; */
+    position: relative;
+    display: flex;
+}
+
+.header-right{
+    border: 1px solid red;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.header-right form button{
+    text-transform: capitalize;
+    color: #ccc;
+     background-color: #242424;
+     font-size: 16px;
+     padding: 0px 5px;
+}
+.header-right form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.input-icon{
+        border-inline-start: 1px solid var (--essential-subdued);
+            padding-inline: 12px 4px;
+            display: flex;
+}
+.mainsection{
+    background-color: black;
+    height: 77vh;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+.mainsection aside{
+    flex-basis: 22%;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+}
+.library{
+    color: #ccc;
+    display: flex;
+    justify-content: space-between;  
+    padding: 27px 20px 0px 20px;
+     position: sticky;
+    top: 0px;
+    left: 0px;
+    cursor: context-menu;
+    /* background-color: #555; */
+}
+/* .library h4{
+    cursor: context-menu;
+} */
+.library a i{
+    color: #fff;
+    cursor: pointer;
+}
+.mainsection main{
+    flex-basis: 78%;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 27px;
+    padding-right:10px;
+    /* overflow-y: auto; */
+}
+.Trendingsection h3{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+.Trendingsection h3:hover{
+    text-decoration: underline;
+}
+.Trendingsection h4{
+    color: #ccc;
+    
+
+}
+.Trendingsection h4:hover{
+    text-decoration: underline;
+    
+}
+.Trendingsection{
+    display: flex;
+    justify-content: space-between;
+    cursor: context-menu;
+}
+.Trendingsectionrow{
+    display: flex;
+    margin-top: 8px;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    
+}
+.Trendingsectionrow figure{
+    flex-basis: 20%;
+    padding: 5px;
+    /* border: 2px solid white; */
+    margin: 10px 0px;
+}
+
+.Trendingsectionrow figure img{
+    width: 100%;
+}
+.Trendingsectionrow figure figcaption{
+    color: white;
+    padding: 10px 0px 0px 0px;
+}
+.Trendingsectionrow figure  p{
+    padding: 10px 0px 0px;
+    color: #b3b3b3;
+    font-size: 14px;
+}
+.Trendingsectionrow figure h4:hover{
+    text-decoration:underline ;
+    color: #fff;
+}
+.Trendingsectionrow figure  p:hover{
+text-decoration: underline;
+color: #fff;
+}
+.second{
+    border-radius: 50%;   
+}
+footer{
+   height: 250px;
+    margin-top: 8%;
+    margin-right: 20px;
+    margin-bottom: 3%;
+    display: flex;
+    gap: 20px;
+}
+.footercontent{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /* border: 1px solid blue; */
+    width: 160px;
+    height: 180px;
+    padding: 10px 0px;
+    
+   
+}
+.footercontent h3{
+    color: white;
+    cursor: auto;
+}
+.footercontent ul li{
+    color: #b3b3b3;
+    padding: 5px 0px;
+    cursor: pointer;
+}
+.footercontent ul li:hover{
+    text-decoration: underline;
+    color: white;
+}
+.iconcontent{
+    /* margin-left: 4%; */
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+    
+}
+ .icon{
+    
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(41, 39, 39);
+    position: relative;
+    cursor: context-menu;
+    
+ }
+ .icon:hover{
+    background-color: #555;
+ }
+.icon i{
+    color: #ccc;
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    font-size: 20px; 
+    cursor: context-menu; 
+}
+figure:hover{
+    background-color: #2c2b2b;
+}
+
+.main-card {
+  width: 310px;
+  height: 180px;
+  /* background-color: #292727; */
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 16px;
+  
+}
+.scroll-area {
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+.card {
+  background-color: #292727;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  color: #ccc;
+  cursor: context-menu
+;
+}
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  /* cursor: context-menu; */
+}
+.card p {
+  font-size: 13px;
+  color: #b3b3b3;
+  padding-top: 10px;
+  /* cursor: context-menu; */
+  /* margin-bottom: 10px; */
+}
+.card button {
+  background-color: #ccc;
+  color: black;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+ transition: all 0.3s ease;
+ cursor: pointer;
+}
+.card button:hover{
+     transform:scale(1.05);
+    
+}
+
+/* Scrollbar styling */
+.scroll-area::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scroll-area::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+.asideend{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 10px;
+    
+   
+}
+.footeraside {
+  padding: 5px 40px;
+  color: #b3b3b3;
+  font-family: Arial, sans-serif;
+  cursor: context-menu;
+}
+
+
+.footer-links {
+  display: flex;         
+  flex-wrap: wrap; 
+  /* row + column ke liye gap        */
+  gap: 10px 24px;         
+  max-width: 600px;  
+  cursor: pointer;     
+}
+
+.footer-link {
+  color: #b3b3b3;
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;    
+  transition: color 0.2s ease;
+}
+.cookies-text {
+  margin-top: 15px;
+  font-size: 13px;
+  /* color: white; */
+}
+.cookies-text a{
+    color: #fff;
+}
+.cookies-text a:hover{
+    text-decoration: underline;
+}
+
+
+.lang-btn {
+  margin-top: 20px;
+  background-color: rgb(24, 24, 24);
+  color: #fff;
+  border: 1px solid #555;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+   transition: all 0.3s ease;
+}
+.lang-btn:hover{
+    transform: translateX(0px) scale(1.05);
+    border: 1px solid white;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  cursor: context-menu;
+}
+.footerspotify {
+  margin-top: 30px;
+  padding-top: 30px;
+  font-size: 14px;
+  color: #b3b3b3;
+  cursor: auto;
+}
+.lastfooter{
+    /* border: 1px solid red; */
+    height: 62px;
+    margin-top: 5px;
+    border-radius: 10px;
+     background: linear-gradient(90deg, #c43a8f 0%, #7b5cc8 50%, #4e8df5 100%);
+ padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+}
+
+
+.fooetr{
+color: #b3b3b3;
+color: #fff;
+ font-size: 14px;
+}
+.fooetr h4{
+    padding-bottom: 5px;
+}
+
+.paragraphbutton{
+height: 45px;
+width: 170px;
+background-color: #fff;
+border-radius: 20px;
+text-align: center;
+font-weight: bold;
+font-size: 14px;
+ transition: all 0.3s ease;
+ cursor: pointer;
+}
+.paragraphbutton:hover {
+    transform:  scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
